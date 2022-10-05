@@ -38,8 +38,8 @@ const game = () => {
         
             compareHands(this.textContent, computerChoice);
         
-            playerHand.src = `./assets/${this.textContent}.png`;
-            computerHand.src = `./assets/${computerChoice}.png`;
+            playerHand.src = `./pictures/${this.textContent}.png`;
+            computerHand.src = `./pictures/${computerChoice}.png`;
           }, 2000);
    
           playerHand.style.animation = "shakePlayer 2s ease";
