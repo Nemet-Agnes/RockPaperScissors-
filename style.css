@@ -3,13 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 section {
   height: 100vh;
   background-color: palevioletred;
   font-family: sans-serif;
 }
-
 .score {
   color: rgb(224, 224, 224);
   height: 20vh;
@@ -25,7 +23,6 @@ section {
   padding: 10px;
   font-size: 25px;
 }
-
 .intro {
   color: antiquewhite;
   height: 50vh;
@@ -51,7 +48,6 @@ section {
   border-radius: 3px;
   cursor: pointer;
 }
-
 .match {
   position: absolute;
   top: 50%;
@@ -64,18 +60,15 @@ section {
   text-align: center;
   font-size: 50px;
 }
-
 .hands,
 .options {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .player-hand {
   transform: rotateY(180deg);
 }
-
 div.fadeOut {
   opacity: 0;
   pointer-events: none;
@@ -85,7 +78,6 @@ div.fadeIn {
   opacity: 1;
   pointer-events: all;
 }
-
 @keyframes shakePlayer {
   0% {
     transform: rotateY(180deg) translateY(0px);
