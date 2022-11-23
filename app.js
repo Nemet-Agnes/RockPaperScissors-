@@ -11,7 +11,6 @@ const game = () => {
       match.classList.add("fadeIn");
     });
   };
-
   const playMatch = () => {
     const options = document.querySelectorAll(".options button");
     const playerHand = document.querySelector(".player-hand");
@@ -22,9 +21,7 @@ const game = () => {
         this.style.animation = "";
       });
     });
-
     const computerOptions = ["rock", "paper", "scissors"];
-
     options.forEach((option) => {
       option.addEventListener("click", function () {
         const computerNumber = Math.floor(Math.random() * 3);
@@ -40,14 +37,12 @@ const game = () => {
       });
     });
   };
-
   const updateScore = () => {
     const playerScore = document.querySelector(".player-score p");
     const computerScore = document.querySelector(".computer-score p");
     playerScore.textContent = pScore;
     computerScore.textContent = cScore;
   };
-
   const compareHands = (playerChoice, computerChoice) => {
     const winner = document.querySelector(".winner");
     if (playerChoice === computerChoice) {
@@ -97,5 +92,4 @@ const game = () => {
   startGame();
   playMatch();
 };
-
 game();
